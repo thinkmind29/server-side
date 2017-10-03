@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="https://lh5.googleusercontent.com/eHw-DsdCnYeccFASVBOPjmd2Whwi-V3LCNjlx8BwnvynWaFV7wgAMc7XAZutl7w-xi8imBDnvG4n7iw=w1311-h654" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Musically Vibe! Sharing your sound!</title>
+</head>
+
+<body style="font-family: Verdana">
+    <div class="container">
+
+        <div class="row">
+            <br>
+            <br>
+            <div class="col-8 col-sm-8 col-lg-8 col-xl-8 col-sm-offset-3 col-lg-offset-3 col-xl-offset-3">
+                <h1>Musically Vibe! Sharing Your Sound!</h1>
+                <img src="https://lh5.googleusercontent.com/eHw-DsdCnYeccFASVBOPjmd2Whwi-V3LCNjlx8BwnvynWaFV7wgAMc7XAZutl7w-xi8imBDnvG4n7iw=w1311-h654" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading" style="background: purple; color: white">Musically Vibe! Sharing your sound</div>
+            <div class="panel-body">
+                <p>Está página contém a api da nossa aplicação, rotas e funcionamentos, para serem consultadas pelos desenvolvedores da nossa aplicação</p>
+                <p>URL - http://musically-vibe.herokuapp.com</p>
+                <a href="https://github.com/thinkmind29/server-side">Repositório do projeto no Github</a>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                    <tr style="background: grey; box-shadow: 1px 1px 1px grey; color: black">
+                        <td>Request</td>
+                        <td>Router</td>
+                        <td>Function</td>
+                        <td>Params</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>get</td>
+                        <td>/user/:tag</td>
+                        <td>Deleta a conta</td>
+                        <td> Funcional </td>
+                    </tr>
+                    <tr>
+                        <td>get</td>
+                        <td>/user/auth/facebook</td>
+                        <td>Login com Facebook</td>
+                        <td>Faltam alguns ajustes para aprimorar</td>
+                    </tr>
+                    <tr>
+                        <td>get</td>
+                        <td>/user/auth/google</td>
+                        <td>Login com Google</td>
+                        <td> Não implementado </td>
+                    </tr>
+                    <tr>
+                        <td>post</td>
+                        <td>/user/login</td>
+                        <td>Login de usuário padrão</td>
+                        <td> Funcional </td>
+                    </tr>
+                    <tr>
+                        <td>post</td>
+                        <td>/user</td>
+                        <td>Cria novo usuário</td>
+                        <td> Funcional </td>
+                    </tr>
+                    <tr>
+                        <td>put</td>
+                        <td>/user</td>
+                        <td>Edita o perfil</td>
+                        <td> Funcional / Falta Ajustes </td>
+                    </tr>
+                    <tr>
+                        <td>put</td>
+                        <td>/user/change</td>
+                        <td>Altera senha</td>
+                        <td> Functional </td>
+                    </tr>
+                    <tr>
+                        <td>delete</td>
+                        <td>/user/:token</td>
+                        <td>Deleta a conta</td>
+                        <td> Funcional </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
