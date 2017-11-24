@@ -1,28 +1,33 @@
 'use strict';
 
-var _passport = require('passport');
-
-var _passport2 = _interopRequireDefault(_passport);
-
 var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
+
+var _keys = require('./helpers/keys');
 
 var _app_config = require('./config/app_config');
 
 var _app_config2 = _interopRequireDefault(_app_config);
 
-var _userRouter = require('./routes/userRouter');
+var _userRouter = require('./routes/user-router');
 
 var _userRouter2 = _interopRequireDefault(_userRouter);
+
+var _messageRouter = require('./routes/message-router');
+
+var _messageRouter2 = _interopRequireDefault(_messageRouter);
 
 var _db_config = require('./config/db_config');
 
 var _db_config2 = _interopRequireDefault(_db_config);
 
+var _cors = require('cors');
+
+var _cors2 = _interopRequireDefault(_cors);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// ROTA DE ACESSO À PAGINA INICIAL DA APLICAÇÃO CONTENDO A DOCUMENTAÇÃO DA MESMA
 _app_config2.default.get('/', function (req, res) {
     res.writeHead(200, { 'Content-type': 'text/html' });
     _fs2.default.readFile(__dirname + '/public/index.html', function (err, html) {
@@ -37,4 +42,5 @@ _app_config2.default.get('/', function (req, res) {
 //IMPORTS DE MODULOS EXTERNOS
 //IMPORTS DE MODULOS DE TERCEIROS
 _app_config2.default.use('/user', _userRouter2.default);
+_app_config2.default.use('/chat', _messageRouter2.default);
 //# sourceMappingURL=app.js.map
