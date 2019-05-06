@@ -4,7 +4,9 @@
   "description": "-Api do projeto interdisciplinar do Centro Universitário Una BH do Módulo 3b 2017/2; -Version 2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __tests__",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,10 @@
   "homepage": "https://github.com/thinkmind29/server-side#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mongoose": "^5.5.5"
+    "mongoose": "^5.5.5",
+    "nodemon": "^1.19.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
