@@ -1,0 +1,24 @@
+{
+  "name": "musicallyapi",
+  "version": "1.0.0",
+  "description": "-Api do projeto interdisciplinar do Centro Universitário Una BH do Módulo 3b 2017/2; -Version 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkmind29/server-side.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkmind29/server-side/issues"
+  },
+  "homepage": "https://github.com/thinkmind29/server-side#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
+  }
+}
